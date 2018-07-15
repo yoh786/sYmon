@@ -66,8 +66,13 @@ chrome.runtime.onMessage.addListener(
 
 			console.log(mesg);
 			
+			
+			//creating text area and using it as a holder to copy text to clipboard
+			
+			
+			
 			//functional code
-console.log("el fin");
+			console.log("el fin");
 			
 		}
 	}
