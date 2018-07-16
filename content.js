@@ -1,7 +1,7 @@
 
 // Content.js
 // This script is functional code that can be executed in a webpage
-console.log("init symon writer and now its 15 diff, reddy");
+console.log("init symon writer and now its 20 diff, reddy");
 
 //example code
 
@@ -68,8 +68,16 @@ chrome.runtime.onMessage.addListener(
 			
 			
 			//creating text area and using it as a holder to copy text to clipboard
-			
-			
+			var holdr = document.createElement('textarea');
+			holdr.value = mesg;
+			//these change css values so the area is hidden
+			holdr.style.position = 'absolute';
+			holdr.style.left = '-9999px';
+			//append the element, select the inside, copy
+			document.body.appendChild(holdr);
+			holdr.select();
+			document.execCommand('copy');
+			document.body.removeChild(holdr);
 			
 			//functional code
 			console.log("el fin");
