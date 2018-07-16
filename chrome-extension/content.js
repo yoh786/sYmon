@@ -45,9 +45,9 @@ chrome.runtime.onMessage.addListener(
 			greeting: greetgen(),
 			snip1: ", \n \n We have received your email requesting service. A trouble ticket has been opened for you, the number is: ",
 			incnumb: inc,
-			snip2: " Your ticket has been assigned to the ",
+			snip2: ". Your ticket has been assigned to the ",
 			asin: team,
-			snip3: " group for resolution. \n \n",
+			snip3: " group for resolution. Have a wonderful day!\n \n",
 			closing: "Regards,\n",
 			agent: "Yousuf H"
 		};		
