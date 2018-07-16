@@ -1,10 +1,10 @@
-SIMON HELPDESK ASSISTANT
+SyMon HELPDESK ASSISTANT
 =========================
 
-SiMon is a script-bot designed to make your job easier here at the help 
+SyMon is a script-bot designed to make your job easier here at the help 
 desk. 
 
-![SiMon](https://trello-attachments.s3.amazonaws.com/5af9b61ed50e3e4a0307e804/5b1306f4d11129badc44908f/4efb47e5cdcc230ea4b8902f63e4fd39/sym.png 
+![SyMon](https://trello-attachments.s3.amazonaws.com/5af9b61ed50e3e4a0307e804/5b1306f4d11129badc44908f/4efb47e5cdcc230ea4b8902f63e4fd39/sym.png 
 "Simon Head")
 
 Primary Functions
