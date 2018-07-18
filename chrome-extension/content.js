@@ -68,7 +68,16 @@ chrome.runtime.onMessage.addListener(
 			
 			
 			//creating text area and using it as a holder to copy text to clipboard
+			var holdr = document.createElement('textarea');
+			holdr.value = mesg; 
+			holdr.setAttribute('readonly', '');
+			holdr.style.position = 'absolute';
+			holdr.style.left = '-9999px';
 			
+			document.body.appendChild(holdr);
+			holdr.select();
+			document.execCommand('copy');
+			document.body.removeChild(holdr);
 			
 			
 			//functional code
