@@ -3,6 +3,7 @@
 	"name": "sYmon Helper",
 	"version": "0.5",
 	"description": "this extension helps with boilerplate Help Desk taks",
+	"permissions": ["storage"],
 	"icons": {
 		"128": "sy128.png",
 		"48": "sy48.png",
