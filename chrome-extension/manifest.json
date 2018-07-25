@@ -1,7 +1,13 @@
 {
 	"manifest_version": 2,
 	"name": "sYmon Helper",
-	"version": "0.1",
+	"version": "0.5",
+	"description": "this extension helps with boilerplate Help Desk taks",
+	"icons": {
+		"128": "sy128.png",
+		"48": "sy48.png",
+		"16": "sy16.png"
+	},
 	"content_scripts": [
 		{
 		"matches": ["<all_urls>"],
@@ -9,9 +15,10 @@
 		}
 	],
 	"browser_action": {
-		"default_icon": "icon.png"
+		"default_icon": "sy16.png",
+		"default_popup": "popup.html"
 	},
 	"background": {
 		"scripts": ["background.js"]
-	}	
-}	
+	}
+}
