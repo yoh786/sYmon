@@ -1,7 +1,7 @@
 
 // Content.js
 // This script is functional code that can be executed in a webpage
-console.log("init symon writer and now its 16 diff, reddy");
+console.log("init symon writer and now its 20 diff, reddy");
 
 //example code
 
@@ -82,6 +82,8 @@ chrome.runtime.onMessage.addListener(
 
 			//functional code
 			console.log("el fin");
+			console.log("imma send a message");
+			console.log("YO SCOTTY!!");
 
 		}
 	}
