@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "sYmon Helper",
-	"version": "0.5",
+	"version": "0.8",
 	"description": "this extension helps with boilerplate Help Desk taks",
 	"permissions": ["storage"],
 	"icons": {
