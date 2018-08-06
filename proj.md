@@ -6,6 +6,7 @@ Current state
 -----------------
 Symon is currently operational as a email template generator *(pulls info from webpage, creates string)*
 - completes this function without bugs
+- gives a badge indicator of click on button
 
 End Goal (consumer-release)
 -----------
@@ -15,3 +16,4 @@ End Goal (consumer-release)
 Current Task
 -------------
 - Adding in badge or other notify of copy success.
+  => have done this but we need to make it conditional; currently just gives indicator of click and vanishes with tab close.
