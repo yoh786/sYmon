@@ -1,7 +1,7 @@
 
 // Content.js
 // This script is functional code that can be executed in a webpage
-console.log("init symon writer and now its 20 diff, reddy");
+console.log("init symon writer and now its 21 diff, reddy");
 
 //example code
 
