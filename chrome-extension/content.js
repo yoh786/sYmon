@@ -13,6 +13,9 @@ $( document ).ready(function() {
 
 // ANYTHING OUTSIDE FUNCTION BELOW WILL ALWAYS EXECUTE ON TAB LOAD;
 
+
+
+
 chrome.runtime.onMessage.addListener(
 	function(request, sender, sendResponse) {
 
@@ -83,6 +86,14 @@ chrome.runtime.onMessage.addListener(
 			//functional code
 			console.log("el fin");
 			console.log("imma send a message");
+			// this line is new and sends a message to background.js
+		//	chrome.runtime.sendMessage({
+		//		"message": "email_completed_success"
+		//	});
+		chrome.runtime.sendMessage({
+			"message": "code_worked"
+		});
+
 			console.log("YO SCOTTY!!");
 
 		}

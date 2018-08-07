@@ -16,4 +16,4 @@ End Goal (consumer-release)
 Current Task
 -------------
 - Adding in badge or other notify of copy success.
-  => have done this but we need to make it conditional; currently just gives indicator of click and vanishes with tab close.
+  => have done this but we need to make it conditional; currently just gives indicator of click and vanishes with tab close. It needs intelligence; in other words we need to be able to predict and capture what kind of errors people will use.
