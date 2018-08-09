@@ -90,11 +90,11 @@ chrome.runtime.onMessage.addListener(
 		//	chrome.runtime.sendMessage({
 		//		"message": "email_completed_success"
 		//	});
-		chrome.runtime.sendMessage({
-			"message": "code_worked"
-		});
+		//chrome.runtime.sendMessage({
+		//	"message": "code_worked"
+		//});
 
-			console.log("YO SCOTTY!!");
+			console.log("YO SCOTTY!! IM DONE.");
 
 		}
 	}
