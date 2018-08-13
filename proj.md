@@ -19,5 +19,6 @@ Current Task(s)
 -------------
 - Adding in badge or other notify of copy success.
   => have done this but we need to make it conditional; currently just gives indicator of click and vanishes with tab close. It needs intelligence; in other words we need to be able to predict and capture what kind of errors people will use. ( CURRENTLY IN HIATUS )
+  [this is causing an issue in that I don't know how ot properly send messages from content.js to background .js ; or rather, I'm not sure how to listen]
 
 - Needs to restrict itself to a set of URLs and also (possibly)

@@ -1,7 +1,7 @@
 
 // Content.js
 // This script is functional code that can be executed in a webpage
-console.log("init symon writer and now its 21 diff, reddy");
+console.log("init symon writer and now its 31 diff, reddy");
 
 //example code
 
@@ -39,8 +39,13 @@ chrome.runtime.onMessage.addListener(
 
 		console.log("vars init complete");
 
-		inc = document.getElementById("sys_readonly.incident.number").value;
-		team = document.getElementById("sys_display.incident.assignment_group").value;
+		if (document.getElementById("sys_readonly.incident.number") != null) {
+			inc = document.getElementById("sys_readonly.incident.number").value;
+		}
+
+		if (document.getElementById("sys_display.incident.assignment_group") != null) {
+			team = document.getElementById("sys_display.incident.assignment_group").value;
+		}
 
 		console.log("Gen object");
 
@@ -50,9 +55,9 @@ chrome.runtime.onMessage.addListener(
 			incnumb: inc,
 			snip2: ". Your ticket has been assigned to the ",
 			asin: team,
-			snip3: " group for resolution. Have a wonderful day!\n \n",
-			closing: "Regards,\n",
-			agent: "Yousuf H"
+			snip3: " group for resolution. Have a wonderful day!\n \n", // MODIFY THESE LINE, watch the quotes :)
+			closing: "Regards,\n", // MODIFY THESE LINE, watch the quotes :)
+			agent: "Yousuf H" // MODIFY THESE LINE, watch the quotes :)
 		};
 
 		if( request.message === "clicked_browser_action" ) {
@@ -85,7 +90,9 @@ chrome.runtime.onMessage.addListener(
 
 			//functional code
 			console.log("el fin");
-			console.log("imma send a message");
+
+		// THERE IS A BOUNTY ON THIS CODE BLOCK - GET MESSAGE SENDING TO WORK AND WIN!
+			//console.log("imma send a message");
 			// this line is new and sends a message to background.js
 		//	chrome.runtime.sendMessage({
 		//		"message": "email_completed_success"
