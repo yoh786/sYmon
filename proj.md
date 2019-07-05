@@ -8,6 +8,8 @@ Symon is currently operational as a email template generator *(pulls info from w
 - completes this function without bugs
 - gives a badge indicator of click on button
 
+As of 4-21-19 this plug in is functional; moving to consumer release.
+
 End Goal (consumer-release)
 -----------
 **1.0c://Symon:** has email gen, and epic keyword spreadsheet functionality
@@ -17,6 +19,11 @@ End Goal (consumer-release)
 
 Current Task(s)
 -------------
+-> using glo and gitkraken to streamline development and move app to production.
+Have to refactor code, add a few features, finalize UX, and finish documentation.
+
+
+Older...
 - Adding in badge or other notify of copy success.
   => have done this but we need to make it conditional; currently just gives indicator of click and vanishes with tab close. It needs intelligence; in other words we need to be able to predict and capture what kind of errors people will use. ( CURRENTLY IN HIATUS )
   [this is causing an issue in that I don't know how ot properly send messages from content.js to background .js ; or rather, I'm not sure how to listen]

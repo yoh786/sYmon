@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
 	"name": "sYmon Helper",
-	"version": "0.8",
-	"description": "this extension helps with boilerplate Help Desk taks",
+	"version": "0.9",
+	"description": "This extension will generate a generic Incident-Created email reply",
 	"permissions": ["storage"],
 	"icons": {
 		"128": "sy128.png",
@@ -11,7 +11,7 @@
 	},
 	"content_scripts": [
 		{
-		"matches": ["<all_urls>"],
+		"matches": ["https://hfhs.service-now.com/incident.do*"],
 		"js": ["jquery-331.slim.js","content.js"]
 		}
 	],
@@ -19,7 +19,19 @@
 		"default_icon": "sy16.png",
 		"default_title": "SyMon"
 	},
+	"author": "Y0h",
+	"commands": {
+		"_execute_browser_action": {
+			"suggested_key": {
+				"default": "Ctrl+Shift+F",
+				"mac": "MacCtrl+Shift+F"
+			},
+		"description": "generates letter"
+		}
+	},
 	"background": {
-		"scripts": ["background.js"]
+		"scripts": ["background.js"],
+		"persistent": false
+		
 	}
 }
