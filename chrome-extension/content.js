@@ -69,9 +69,9 @@ chrome.runtime.onMessage.addListener(
 			incnumb: inc,
 			snip2: ". We've assigned your ticket to the ",
 			asin: team,
-			snip3: " group for resolution. Have a great day!\n \n", // MODIFY THESE LINE, watch the quotes :)
-			closing: "Regards,\n", // MODIFY THESE LINE, watch the quotes :)
-			agent: "Yousuf H" // MODIFY THESE LINE, watch the quotes :)
+			snip3: " group for resolution. Have a great day!\n \n", // MODIFY THIS LINE, watch the quotes :)
+			closing: "Regards,\n", // MODIFY THIS LINE, watch the quotes :)
+			agent: "Yousuf H" // MODIFY THIS LINE, watch the quotes :)
 		};
 
 		if( request.message === "clicked_browser_action" ) {
