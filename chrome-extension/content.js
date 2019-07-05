@@ -25,7 +25,7 @@ chrome.runtime.onMessage.addListener(
 			t = new Date();
 			h = t.getHours();
 
-			if (h <= 12) {
+			if (h < 12) {
 				return "Good Morning";
 			} else if (h <= 18)  {
 				return "Good Afternoon";
@@ -73,6 +73,10 @@ chrome.runtime.onMessage.addListener(
 			var mesg = letter.join("");
 
 			console.log(mesg);
+			
+			if (msg.asin == "lions") {
+				console.log("erroneous input")
+			};
 
 
 			//creating text area and using it as a holder to copy text to clipboard
