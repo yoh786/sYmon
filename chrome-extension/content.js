@@ -65,11 +65,11 @@ chrome.runtime.onMessage.addListener(
 
 		var msg = {
 			greeting: greetgen(),
-			snip1: "\n \n We have received your email requesting service. A trouble ticket has been opened for you, the number is: ",
+			snip1: "\n \n Thank you for contacting the Service Desk; we have received your email requesting service. A incident has been opened for you and your ticket number is: ",
 			incnumb: inc,
-			snip2: ". Your ticket has been assigned to the ",
+			snip2: ". We've assigned your ticket to the ",
 			asin: team,
-			snip3: " group for resolution. Have a wonderful day!\n \n", // MODIFY THESE LINE, watch the quotes :)
+			snip3: " group for resolution. Have a great day!\n \n", // MODIFY THESE LINE, watch the quotes :)
 			closing: "Regards,\n", // MODIFY THESE LINE, watch the quotes :)
 			agent: "Yousuf H" // MODIFY THESE LINE, watch the quotes :)
 		};
