@@ -21,18 +21,6 @@ chrome.runtime.onMessage.addListener(
 
 		//ALL of this is done on browser action click
 
-		var greetgen = function(t, h) {
-			t = new Date();
-			h = t.getHours();
-
-			if (h < 12) {
-				return "Good Morning";
-			} else if (h <= 18)  {
-				return "Good Afternoon";
-			} else {
-				return "Good Evening";
-			}
-		};
 
 		var team = "lions";
 		var inc = "21341";
@@ -46,12 +34,38 @@ chrome.runtime.onMessage.addListener(
 		if (document.getElementById("sys_display.incident.assignment_group") != null) {
 			team = document.getElementById("sys_display.incident.assignment_group").value;
 		}
+		
+		if (document.getElementById("sys_display.incident.caller_id") != null) {
+			callerName = document.getElementById("sys_display.incident.caller_id").value;
+		}
+		
+		if (callerName != null) {
+			nameList = callerName.split(" ")
+		}
+		
+		var greetgen = function(n, t, h) {
+			t = new Date();
+			h = t.getHours();
+			g = ""
+			n = nameList[1]
+
+			if (h < 12) {
+				g = "Good Morning ";
+			} else if (h <= 18)  {
+				g = "Good Afternoon ";
+			} else {
+				g = "Good Evening ";
+			}
+			
+			fullgreet = g.concat(n, ',')
+			return fullgreet
+		};
 
 		console.log("Gen object");
 
 		var msg = {
 			greeting: greetgen(),
-			snip1: ", \n \n We have received your email requesting service. A trouble ticket has been opened for you, the number is: ",
+			snip1: "\n \n We have received your email requesting service. A trouble ticket has been opened for you, the number is: ",
 			incnumb: inc,
 			snip2: ". Your ticket has been assigned to the ",
 			asin: team,
@@ -76,7 +90,7 @@ chrome.runtime.onMessage.addListener(
 			
 			if (msg.asin == "lions") {
 				console.log("erroneous input")
-			};
+			}; //incomplete error catch for unfilled team 
 
 
 			//creating text area and using it as a holder to copy text to clipboard

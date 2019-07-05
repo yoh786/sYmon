@@ -8,7 +8,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 	   var activeTab = tabs[0];
 	   chrome.tabs.sendMessage(activeTab.id, {"message": "clicked_browser_action"});
 		 chrome.browserAction.setBadgeBackgroundColor({color: '#DB3236'});
-		 chrome.browserAction.setBadgeText({text: ':)', tabId: activeTab.id});
+		 chrome.browserAction.setBadgeText({text: '<3', tabId: activeTab.id});
 		 
 		 console.log("finish interpreting background.js")
 	 })

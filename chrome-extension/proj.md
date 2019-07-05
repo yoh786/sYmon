@@ -8,6 +8,8 @@ Symon is currently operational as a email template generator *(pulls info from w
 - completes this function without bugs
 - gives a badge indicator of click on button
 
+->> Currently operational: 7-10-19
+
 End Goal (consumer-release)
 -----------
 **1.0c://Symon:** has email gen, and epic keyword spreadsheet functionality
