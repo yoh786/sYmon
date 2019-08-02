@@ -37,7 +37,7 @@ Get the files
 
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
-Navigate to Github link for repository.
+Navigate to Github link for repository. You'll be downloading a zip file, click the green button above files.
 
 **STEP 2:**
 
@@ -58,8 +58,6 @@ Modify scripts to personalize
 ------------
 
 **STEP 1:**
-
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 Go to where you unzipped the archive and then enter the main extension folder. 
 Right click the file named "content.js"
@@ -107,9 +105,6 @@ Install the extension
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 Open Google Chrome and access your extensions config page. To get there, just click the extensions link from the Chrome menu.
-Alternatively, the link below should work.
-
-[Google Extensions Config Page](chrome://extensions"Extensions")
 
 **STEP 2:**
 
