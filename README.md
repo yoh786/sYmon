@@ -20,21 +20,24 @@ Primary Functions
 Future](https://trello-attachments.s3.amazonaws.com/5af9b61ed50e3e4a0307e804/5b1306f4d11129badc44908f/68a75eebc1ed27a20a7aed99db75406a/bannerSmoller.png 
 "future")
 
+-----------
+
 INSTALLATION
 ============
 
 
-You'll be installing the extension in Google Chrome using developer mode.
+You'll be installing the extension in Google Chrome using developer mode for the in-browser extension manager.
 
 ----
 
-##Get the files
+Get the files
+------------
 
 **STEP 1:**
 
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
-Navigate to Github link or just download the attachment on this email.
+Navigate to Github link for repository.
 
 **STEP 2:**
 
@@ -51,7 +54,8 @@ Go to the file location and unzip the folder. Right click and click 'Extract All
 
 ----
 
-##Modify scripts to personalize
+Modify scripts to personalize
+------------
 
 **STEP 1:**
 
@@ -95,7 +99,8 @@ For the message, you should change the default. I recommend using:
 
 ----
 
-##Install the extension
+Install the extension
+------------
 
 **STEP 1:**
 
@@ -138,9 +143,10 @@ Please add the below URL as a bookmark *(preferably on your bookmarks bar for qu
 ----------
 
 Usage
----------
+======
 
 **Email auto-responder**
+vvkblkedvruceijkgnttltvgjecrluikukhetvurlhri
 
 This is a chrome extension that writes general response emails for you 
 by extracting relevant data from your ticket. 
