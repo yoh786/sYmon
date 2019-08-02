@@ -39,7 +39,7 @@ Navigate to Github link for repository. You'll be downloading a zip file, click 
 
 **STEP 2:**
 
-![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/1-1.png)
+![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/1-2.png)
 
 
 Download the file as a zip by clicking the link in this drop down. Save to a known location.
@@ -47,7 +47,7 @@ Download the file as a zip by clicking the link in this drop down. Save to a kno
 
 **STEP 3:**
 
-![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/1-1.png)
+![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/1-3.png)
 
 
 Go to the file location and unzip the folder. Right click and click 'Extract All'. Put somewhere safe from deletion.
@@ -64,7 +64,7 @@ Right click the file named "content.js"
 
 **STEP 2:**
 
-![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/1-1.png)
+![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/2-1.png)
 
 
 Click "Open With..."
@@ -72,12 +72,12 @@ Click "Open With..."
 
 **STEP 3:**
 
-![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/1-1.png)
+![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/2-2.png)
 
 
 Click 'More Apps' in the modal that comes up. You should get a list where you can select Notepad. 
 
-![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/1-1.png)
+![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/2-3.png)
 
 
 *You'll just need to open it this one time, so you shouldn't need to change default program permanently.*
@@ -85,7 +85,7 @@ Click 'More Apps' in the modal that comes up. You should get a list where you ca
 
 **STEP 4:**
 
-![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/1-1.png)
+![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/2-4.png)
 
 
 Modify the lines above for the *msg* javascript object. 
@@ -106,21 +106,21 @@ Install the extension
 
 **STEP 1:**
 
-![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/1-1.png)
+![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/3-1.png)
 
 
 Open Google Chrome and access your extensions config page. To get there, just click the extensions link from the Chrome menu.
 
 **STEP 2:**
 
-![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/1-1.png)
+![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/3-2.png)
 
 
 Flip this switch to turn on developer mode. Then click 'Load unpacked extension'
 
 **STEP 3:**
 
-![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/1-1.png)
+![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/3-3.png)
 
 
 Navigate inside of the folder you unzipped to and then drill down until you see the chrome-extension folder. 
@@ -128,7 +128,7 @@ Select this folder with your mouse and then click button 'Select Folder' to load
 
 **STEP 4:**
 
-![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/1-1.png)
+![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/3-4.png)
 
 
 The extensions should show up in your list if successful. You're finished! 
