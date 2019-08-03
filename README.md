@@ -10,7 +10,7 @@ desk.
 Primary Functions
 -----------------
 
-- abstracting menial tasks (extra copy&pasta)
+- abstracting menial tasks (extra copy&pasta, repetitive typing)
 
 - providing an interactive hub of information (in progress)
 
