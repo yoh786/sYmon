@@ -145,14 +145,29 @@ Please add the below URL as a bookmark *(preferably on your bookmarks bar for qu
 
 ----------
 
-Usage
+How to use this extension:
 ======
 
-**Email auto-responder**
-vvkblkedvruceijkgnttltvgjecrluikukhetvurlhri
-
 This is a chrome extension that writes general response emails for you 
-by extracting relevant data from your ticket. 
+by extracting relevant data from your ticket. It does all the work with a background script and then copies the text to the system clipboard.
+Once it is in the clip board it pastes like any other text.
+
+**STEP 1**
+*As mentioned above in installation, this only works on tickets with no toolbars.* Launch a new ticket with your special link, here it is again:
+[New Ticket - no toolbars](https://hfhs.service-now.com/incident.do?sys_id=-1&sysparm_stack=incident_list.do&sysparm_view=new_ticket&sysparm_query=active=true^EQ "New Ticket - without toolbars")
+
+Tip: add as a bookmark.
+
+**STEP 2**
+Complete your ticket fully and save the ticket. Technically you can run the extension without saving the ticket first, but it is better practice to save so you don't lose data.
+
+**STEP 3**
+Click the extension icon; alternatively you can press the keyboard shortcut *Ctrl - Shift - F*. 
+Symon will give you a little red heart as a notification it ran. Your message has now been copied to the Windows clipboard. 
+
+**STEP 4**
+Paste the message in Openscape or wherever else you need it.
+
 
 -------------
 
