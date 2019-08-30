@@ -160,13 +160,16 @@ Tip: add as a bookmark.
 
 **STEP 2**
 Complete your ticket fully and save the ticket. Technically you can run the extension without saving the ticket first, but it is better practice to save so you don't lose data.
+![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/use1.png)
 
 **STEP 3**
 Click the extension icon; alternatively you can press the keyboard shortcut *Ctrl - Shift - F*. 
 Symon will give you a little red heart as a notification it ran. Your message has now been copied to the Windows clipboard. 
+![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/use2.png)
 
 **STEP 4**
 Paste the message in Openscape or wherever else you need it.
+![Instruction](https://raw.githubusercontent.com/yoh786/sYmon/Documentation/documentationAssets/use3.png)
 
 
 -------------
@@ -184,3 +187,11 @@ how it would work, and then we'll get cracking!
 **2. This is really nice and all but... can we have a Help-Desk Puppy?**
 
 Please direct all requests for mascot puppies to Melanie. 
+
+**3. Why doesn't it work with toolbars?**
+
+Not sure, curious thing is if you run the code from developer console it does work perfect. 
+My guess is something to do with the DOM / Shadow DOM when the pages run in the frame of Service Now.
+There's a bug bounty for it if you figure it out. I'll buy you some lunch.
+
+
