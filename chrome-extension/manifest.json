@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "sYmon Helper",
-	"version": "0.9",
+	"version": "1.0",
 	"description": "This extension will generate a generic Incident-Created email reply",
 	"permissions": ["storage"],
 	"icons": {
@@ -32,6 +32,6 @@
 	"background": {
 		"scripts": ["background.js"],
 		"persistent": false
-		
+
 	}
 }
