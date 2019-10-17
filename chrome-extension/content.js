@@ -1,7 +1,7 @@
 
 // Content.js
 // This script is functional code that can be executed in a webpage
-console.log("init symon writer and now its 31 diff, reddy");
+console.log("init symon writer and now its 1.0c, reddy");
 
 //example code
 
@@ -90,11 +90,11 @@ chrome.runtime.onMessage.addListener(
 
 			var mesg = letter.join("");
 
-			console.log(mesg);
+			console.log("made letter");
 
 			if (msg.asin == "") {
 				console.log("erroneous input")
-				mesg = "Missing field"
+				mesg = "Missing field - no assigned group"
 			}; //incomplete error catch for unfilled team
 
 
