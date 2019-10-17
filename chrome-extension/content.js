@@ -57,7 +57,7 @@ chrome.runtime.onMessage.addListener(
 				g = "Good Evening ";
 			}
 
-			if (n="undefined") {
+			if (n==="undefined") {
 				n="";
 			}
 
@@ -69,13 +69,13 @@ chrome.runtime.onMessage.addListener(
 
 		var msg = {
 			greeting: greetgen(),
-			snip1: "\n \n We have received your email requesting service.   A trouble ticket has been opened for you, the number is ",
+			snip1: "\n \n We have received your email requesting service. A trouble ticket has been opened for you, the number is ",
 			incnumb: inc,
 			snip2: ". Your ticket has been assigned to the ",
 			asin: team,
 			snip3: " group for resolution. Have a great day!\n \n", // MODIFY THIS LINE, watch the quotes :)
 			closing: "Regards,\n", // MODIFY THIS LINE, watch the quotes :)
-			agent: "Yousuf H" // MODIFY THIS LINE, watch the quotes :)
+			agent: "-" // MODIFY THIS LINE, watch the quotes :)
 		};
 
 		if( request.message === "clicked_browser_action" ) {
