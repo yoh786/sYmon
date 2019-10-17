@@ -34,15 +34,15 @@ chrome.runtime.onMessage.addListener(
 		if (document.getElementById("sys_display.incident.assignment_group") != null) {
 			team = document.getElementById("sys_display.incident.assignment_group").value;
 		}
-		
+
 		if (document.getElementById("sys_display.incident.caller_id") != null) {
 			callerName = document.getElementById("sys_display.incident.caller_id").value;
 		}
-		
+
 		if (callerName != null) {
-			nameList = callerName.split(" ")
+			nameList = callerName.split(", ")
 		}
-		
+
 		var greetgen = function(n, t, h) {
 			t = new Date();
 			h = t.getHours();
@@ -56,7 +56,11 @@ chrome.runtime.onMessage.addListener(
 			} else {
 				g = "Good Evening ";
 			}
-			
+
+			if (n==="undefined") {
+				n="";
+			}
+
 			fullgreet = g.concat(n, ',')
 			return fullgreet
 		};
@@ -65,13 +69,13 @@ chrome.runtime.onMessage.addListener(
 
 		var msg = {
 			greeting: greetgen(),
-			snip1: "\n \n Thank you for contacting the Service Desk; we have received your email requesting service. An incident has been opened for you; the ticket number is: ",
+			snip1: "\n \n We have received your email requesting service. A trouble ticket has been opened for you, the number is ",
 			incnumb: inc,
-			snip2: ". \nWe've assigned your ticket to the ",
+			snip2: ". Your ticket has been assigned to the ",
 			asin: team,
 			snip3: " group for resolution. Have a great day!\n \n", // MODIFY THIS LINE, watch the quotes :)
 			closing: "Regards,\n", // MODIFY THIS LINE, watch the quotes :)
-			agent: "Yousuf H" // MODIFY THIS LINE, watch the quotes :)
+			agent: "-" // MODIFY THIS LINE, watch the quotes :)
 		};
 
 		if( request.message === "clicked_browser_action" ) {
@@ -87,10 +91,11 @@ chrome.runtime.onMessage.addListener(
 			var mesg = letter.join("");
 
 			console.log(mesg);
-			
-			if (msg.asin == "lions") {
+
+			if (msg.asin == "") {
 				console.log("erroneous input")
-			}; //incomplete error catch for unfilled team 
+				mesg = "Missing field"
+			}; //incomplete error catch for unfilled team
 
 
 			//creating text area and using it as a holder to copy text to clipboard
