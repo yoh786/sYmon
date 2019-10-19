@@ -1,7 +1,7 @@
 
 // Content.js
 // This script is functional code that can be executed in a webpage
-console.log("init symon writer and now its 31 diff, reddy");
+console.log("init symon writer 1.0c, reddy");
 
 //example code
 
@@ -39,7 +39,7 @@ chrome.runtime.onMessage.addListener(
 			callerName = document.getElementById("sys_display.incident.caller_id").value;
 		}
 
-		if (callerName != null) {
+		if (callerName != "") {
 			nameList = callerName.split(", ")
 		}
 
@@ -57,10 +57,6 @@ chrome.runtime.onMessage.addListener(
 				g = "Good Evening ";
 			}
 
-			if (n==="undefined") {
-				n="";
-			}
-
 			fullgreet = g.concat(n, ',')
 			return fullgreet
 		};
@@ -69,11 +65,11 @@ chrome.runtime.onMessage.addListener(
 
 		var msg = {
 			greeting: greetgen(),
-			snip1: "\n \n We have received your email requesting service. A trouble ticket has been opened for you, the number is ",
+			snip1: "\n \n We have received your email requesting service.   A trouble ticket has been opened for you, the number is ",
 			incnumb: inc,
 			snip2: ". Your ticket has been assigned to the ",
 			asin: team,
-			snip3: " group for resolution. Have a great day!\n \n", // MODIFY THIS LINE, watch the quotes :)
+			snip3: " group for resolution.\n \nThank you and please contact the Help Desk if you have any questions regarding this ticket.", // MODIFY THIS LINE, watch the quotes :)
 			closing: "Regards,\n", // MODIFY THIS LINE, watch the quotes :)
 			agent: "-" // MODIFY THIS LINE, watch the quotes :)
 		};
@@ -124,7 +120,6 @@ chrome.runtime.onMessage.addListener(
 		//	"message": "code_worked"
 		//});
 
-			console.log("YO SCOTTY!! IM DONE.");
 
 		}
 	}
