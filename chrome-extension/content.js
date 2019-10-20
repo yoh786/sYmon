@@ -24,6 +24,7 @@ chrome.runtime.onMessage.addListener(
 
 		var team = "lions";
 		var inc = "21341";
+		var callerName = "hold";
 
 		console.log("vars init complete");
 
@@ -35,7 +36,7 @@ chrome.runtime.onMessage.addListener(
 			team = document.getElementById("sys_display.incident.assignment_group").value;
 		}
 
-		if (document.getElementById("sys_display.incident.caller_id") != null) {
+		if (document.getElementById("sys_display.incident.caller_id") != "") {
 			callerName = document.getElementById("sys_display.incident.caller_id").value;
 		}
 
@@ -47,7 +48,18 @@ chrome.runtime.onMessage.addListener(
 			t = new Date();
 			h = t.getHours();
 			g = ""
-			n = nameList[1]
+
+			if (nameList != undefined) {
+				n = nameList[1]
+			}
+			console.log(n)
+			fn = ""
+
+			if (n != undefined) {
+				nar = n.split(" ")
+				fn = nar[0] + ""
+				console.log(fn)
+			}
 
 			if (h < 12) {
 				g = "Good Morning ";
@@ -57,21 +69,23 @@ chrome.runtime.onMessage.addListener(
 				g = "Good Evening ";
 			}
 
-			fullgreet = g.concat(n, ',')
+			fullgreet = g.concat(fn, ',')
+
 			return fullgreet
 		};
 
 		console.log("Gen object");
 
+
 		var msg = {
 			greeting: greetgen(),
 			snip1: "\n \n We have received your email requesting service.   A trouble ticket has been opened for you, the number is ",
 			incnumb: inc,
-			snip2: ". Your ticket has been assigned to the ",
+			snip2: ".   Your ticket has been assigned to the ",
 			asin: team,
 			snip3: " group for resolution.\n \nThank you and please contact the Help Desk if you have any questions regarding this ticket.", // MODIFY THIS LINE, watch the quotes :)
-			closing: "Regards,\n", // MODIFY THIS LINE, watch the quotes :)
-			agent: "-" // MODIFY THIS LINE, watch the quotes :)
+			closing: "\n \n \n Regards,\n", // MODIFY THIS LINE, watch the quotes :)
+			agent: "  - " // MODIFY THIS LINE, watch the quotes :)
 		};
 
 		if( request.message === "clicked_browser_action" ) {
@@ -86,11 +100,10 @@ chrome.runtime.onMessage.addListener(
 
 			var mesg = letter.join("");
 
-			console.log(mesg);
 
 			if (msg.asin == "") {
 				console.log("erroneous input")
-				mesg = "Missing field"
+				mesg = "Missing field - Assigned Group"
 			}; //incomplete error catch for unfilled team
 
 
