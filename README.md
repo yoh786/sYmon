@@ -35,10 +35,18 @@ Please add the below URL as a bookmark *(preferably on your bookmarks bar for qu
 
 [New Ticket - no toolbars](https://hfhs.service-now.com/incident.do?sys_id=-1&sysparm_stack=incident_list.do&sysparm_view=new_ticket&sysparm_query=active=true^EQ "New Ticket - without toolbars")
 
-**STEP 1:**
+STEP 1:
+-------
 
-Go to the Chrome Web Store page and click Add to Chrome. Okay, you're done :)
+Go to the Chrome Web Store page and click Add to Chrome.
+*here is the link*
+[Webstore Link]("https://chrome.google.com/webstore/detail/symon-helper/gghpodhkimanjlkjofinjlcngehdgjie")
+
+Okay, you're done :)
 Symon will be active on the *next tab* you launch. It is better to restart Chrome after installation so it is fully ready to go on every page.
+
+![YuS](https://www.clareecho.ie/wp-content/uploads/2017/10/good-job-meme.jpg "Logo Title Text 1")
+
 
 -----
 

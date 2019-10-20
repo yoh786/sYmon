@@ -29,9 +29,10 @@
 		"description": "generates letter"
 		}
 	},
+	"short_name": "Symon",
 	"background": {
 		"scripts": ["background.js"],
 		"persistent": false
-		
+
 	}
 }
