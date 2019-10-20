@@ -40,7 +40,7 @@ STEP 1:
 
 Go to the Chrome Web Store page and click Add to Chrome.
 *here is the link*
-[Webstore Link]("https://chrome.google.com/webstore/detail/symon-helper/gghpodhkimanjlkjofinjlcngehdgjie")
+[Webstore Link](https://chrome.google.com/webstore/detail/symon-helper/gghpodhkimanjlkjofinjlcngehdgjie "Link to Webstore Page")
 
 Okay, you're done :)
 Symon will be active on the *next tab* you launch. It is better to restart Chrome after installation so it is fully ready to go on every page.
